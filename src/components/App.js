@@ -100,7 +100,7 @@ function App() {
                 name="avatar-editing"
                 isShow={isEditAvatarPopupOpen}
                 onClose={closeAllPopups}
-                title="Новое место">
+                title="Обновить аватар">
                 <input
                     className="popup__form-input"
                     id="avatar-input"

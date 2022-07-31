@@ -1,0 +1,10 @@
+.footer {
+    display: flex;
+    color: #545454;
+}
+
+@media screen and (max-width: 620px) {
+    .footer {
+        margin-left: 19px;
+    }
+}

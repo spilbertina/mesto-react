@@ -1,0 +1,13 @@
+.profile__avatar-editing {
+    position: absolute;
+    top: 45px;
+    right: 805px;
+    background-image: url(../../../images/Vector-pen-avatar.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: -1;
+}

@@ -1,0 +1,12 @@
+.popup__figure-img {
+    max-width: 64vw;
+    min-width: 240px;
+    max-height: 80vh;
+    background-size: cover;
+}
+
+@media screen and (max-width: 400px) {
+    .popup__figure-img {
+        max-width: 240px;
+    }
+}

@@ -42,6 +42,7 @@ function App() {
 
             <PopupWithForm
                 name="profile"
+                buttonText="Сохранить"
                 isShow={isEditProfilePopupOpen}
                 onClose={closeAllPopups}
                 title="Редактировать профиль">
@@ -71,6 +72,7 @@ function App() {
 
             <PopupWithForm
                 name="card"
+                buttonText="Создать"
                 isShow={isCreateCardPopupOpen}
                 onClose={closeAllPopups}
                 title="Новое место">
@@ -98,6 +100,7 @@ function App() {
 
             <PopupWithForm
                 name="avatar-editing"
+                buttonText="Сохранить"
                 isShow={isEditAvatarPopupOpen}
                 onClose={closeAllPopups}
                 title="Обновить аватар">
@@ -113,7 +116,7 @@ function App() {
             </PopupWithForm>
 
             <ImagePopup
-                link={selectedCard}
+                card={selectedCard}
                 onClose={closeAllPopups}>
             </ImagePopup>
         </div>

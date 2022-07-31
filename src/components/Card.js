@@ -1,5 +1,4 @@
 import React from "react";
-import Vector from '../images/Vector+.svg'
 
 function Card(props) {  
     return (
@@ -8,7 +7,7 @@ function Card(props) {
                 className="element__image"
                 src={props.card.link}
                 alt={props.card.name}
-                onClick={ ()=> { props.onCardClick(props.card.link) } }
+                onClick={ ()=> { props.onCardClick(props.card) } }
             />
             <button
                 className="element__trash"

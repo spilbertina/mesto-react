@@ -1,7 +1,7 @@
 
 import React from "react";
 
-import SaveButton from '../images/Save-button.png'
+import SaveButton from '../images/Cross-button.png'
 
 function PopupWithForm(props) {
     function handleOverlayClick(evt) {
@@ -19,10 +19,10 @@ function PopupWithForm(props) {
                     />
                 </button>
                 <h2 className="popup__title">{props.title}</h2>
-                <form className="popup__form" name={props.name} noValidate>
+                <form className="popup__form" name={props.name} >
                     {props.children}
-                    <button className="popup__form-button" type="submit" onClick={props.buttonText} > 
-                        Сохранить
+                    <button className="popup__form-button" type="submit" > 
+                        { props.buttonText }
                     </button>
                 </form>
             </div>

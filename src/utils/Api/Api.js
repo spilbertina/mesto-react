@@ -4,7 +4,7 @@ import { Post } from "./Requests/Post.js";
 import { Put } from './Requests/Put.js'
 import { Delete } from './Requests/Delete.js'
 
-export class Api {
+class Api {
     constructor(baseUrl, login, token) {
         this._baseUrl = baseUrl;
         this._login = login;
@@ -49,3 +49,10 @@ export class Api {
         return this._delete.query(`cards/${cardId}`);
     }
 }
+
+const api = new Api(
+    'https://mesto.nomoreparties.co/v1/',
+    'cohort-43',
+    'ee068133-e055-42c6-88de-c45211ca2bd0');
+
+export default api;

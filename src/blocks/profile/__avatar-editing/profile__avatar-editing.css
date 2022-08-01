@@ -1,13 +1,21 @@
 .profile__avatar-editing {
+    height: 120px;
+    width: 120px;
+    padding: 0;
     position: absolute;
-    top: 45px;
-    right: 805px;
-    background-image: url(../../../images/Vector-pen-avatar.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 26px;
-    height: 26px;
+    left: 0;
+    top: 0;
+    object-fit: cover;
     border: none;
-    background-color: rgba(0, 0, 0, 0);
-    z-index: -1; 
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+}
+
+.profile__avatar-editing:hover {
+    background-color: rgba(0, 0, 0, 0.80);
+    background-image: url(../../../images/Vector-pen-avatar.svg);
+    background-size: 26px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
